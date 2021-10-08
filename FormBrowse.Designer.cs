@@ -136,7 +136,6 @@ namespace GitUI.CommandsDialogs
             // 
             this.ToolStripMain.Dock = System.Windows.Forms.DockStyle.None;
             this.ToolStripMain.GripMargin = new System.Windows.Forms.Padding(0);
-            this.ToolStripMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.ToolStripMain.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ToolStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RefreshButton,
@@ -158,10 +157,9 @@ namespace GitUI.CommandsDialogs
             this.userShell,
             this.EditSettings});
             this.ToolStripMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.ToolStripMain.Location = new System.Drawing.Point(3, 0);
+            this.ToolStripMain.Location = new System.Drawing.Point(3, 25);
             this.ToolStripMain.Name = "ToolStripMain";
-            this.ToolStripMain.Padding = new System.Windows.Forms.Padding(0);
-            this.ToolStripMain.Size = new System.Drawing.Size(601, 25);
+            this.ToolStripMain.Size = new System.Drawing.Size(576, 25);
             this.ToolStripMain.TabIndex = 0;
             this.ToolStripMain.Text = "Standard";
             // 
@@ -497,9 +495,10 @@ namespace GitUI.CommandsDialogs
             // 
             this.toolStripRevisionFilterTextBox.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripRevisionFilterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripRevisionFilterTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripRevisionFilterTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toolStripRevisionFilterTextBox.Name = "toolStripRevisionFilterTextBox";
-            this.toolStripRevisionFilterTextBox.Size = new System.Drawing.Size(100, 23);
+            this.toolStripRevisionFilterTextBox.Size = new System.Drawing.Size(100, 25);
             // 
             // toolStripRevisionFilterDropDownButton
             // 
@@ -507,7 +506,7 @@ namespace GitUI.CommandsDialogs
             this.toolStripRevisionFilterDropDownButton.Image = global::ToolstripLoad.Properties.Resources.BrowseFileExplorer;
             this.toolStripRevisionFilterDropDownButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRevisionFilterDropDownButton.Name = "toolStripRevisionFilterDropDownButton";
-            this.toolStripRevisionFilterDropDownButton.Size = new System.Drawing.Size(29, 20);
+            this.toolStripRevisionFilterDropDownButton.Size = new System.Drawing.Size(29, 22);
             // 
             // ShowFirstParent
             // 
@@ -515,7 +514,7 @@ namespace GitUI.CommandsDialogs
             this.ShowFirstParent.Image = global::ToolstripLoad.Properties.Resources.BrowseFileExplorer;
             this.ShowFirstParent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ShowFirstParent.Name = "ShowFirstParent";
-            this.ShowFirstParent.Size = new System.Drawing.Size(23, 20);
+            this.ShowFirstParent.Size = new System.Drawing.Size(23, 22);
             this.ShowFirstParent.ToolTipText = "Show first parents";
             // 
             // MainSplitContainer
@@ -534,7 +533,7 @@ namespace GitUI.CommandsDialogs
             // MainSplitContainer.Panel2
             // 
             this.MainSplitContainer.Panel2.Controls.Add(this.RightSplitContainer);
-            this.MainSplitContainer.Size = new System.Drawing.Size(907, 505);
+            this.MainSplitContainer.Size = new System.Drawing.Size(907, 480);
             this.MainSplitContainer.SplitterDistance = 192;
             this.MainSplitContainer.SplitterWidth = 6;
             this.MainSplitContainer.TabIndex = 1;
@@ -551,8 +550,8 @@ namespace GitUI.CommandsDialogs
             // 
             this.RightSplitContainer.Panel1.Controls.Add(this.RevisionsSplitContainer);
             this.RightSplitContainer.Panel2MinSize = 0;
-            this.RightSplitContainer.Size = new System.Drawing.Size(709, 505);
-            this.RightSplitContainer.SplitterDistance = 210;
+            this.RightSplitContainer.Size = new System.Drawing.Size(709, 480);
+            this.RightSplitContainer.SplitterDistance = 199;
             this.RightSplitContainer.SplitterWidth = 6;
             this.RightSplitContainer.TabIndex = 1;
             this.RightSplitContainer.TabStop = false;
@@ -572,8 +571,8 @@ namespace GitUI.CommandsDialogs
             // RevisionsSplitContainer.Panel2
             // 
             this.RevisionsSplitContainer.Panel2.Padding = new System.Windows.Forms.Padding(1);
-            this.RevisionsSplitContainer.Size = new System.Drawing.Size(709, 210);
-            this.RevisionsSplitContainer.SplitterDistance = 407;
+            this.RevisionsSplitContainer.Size = new System.Drawing.Size(709, 199);
+            this.RevisionsSplitContainer.SplitterDistance = 405;
             this.RevisionsSplitContainer.SplitterWidth = 6;
             this.RevisionsSplitContainer.TabIndex = 0;
             // 
@@ -726,7 +725,7 @@ namespace GitUI.CommandsDialogs
             this.toolPanel.ContentPanel.Controls.Add(this.MainSplitContainer);
             this.toolPanel.ContentPanel.Margin = new System.Windows.Forms.Padding(0);
             this.toolPanel.ContentPanel.Padding = new System.Windows.Forms.Padding(8);
-            this.toolPanel.ContentPanel.Size = new System.Drawing.Size(923, 521);
+            this.toolPanel.ContentPanel.Size = new System.Drawing.Size(923, 496);
             this.toolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolPanel.LeftToolStripPanelVisible = false;
             this.toolPanel.Location = new System.Drawing.Point(0, 27);
@@ -740,13 +739,11 @@ namespace GitUI.CommandsDialogs
             // 
             this.toolPanel.TopToolStripPanel.Controls.Add(this.ToolStripMain);
             this.toolPanel.TopToolStripPanel.Controls.Add(this.ToolStripFilters);
-            this.toolPanel.TopToolStripPanel.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
             // 
             // ToolStripFilters
             // 
             this.ToolStripFilters.Dock = System.Windows.Forms.DockStyle.None;
             this.ToolStripFilters.GripMargin = new System.Windows.Forms.Padding(0);
-            this.ToolStripFilters.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.ToolStripFilters.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ToolStripFilters.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
@@ -758,10 +755,9 @@ namespace GitUI.CommandsDialogs
             this.toolStripRevisionFilterDropDownButton,
             this.ShowFirstParent});
             this.ToolStripFilters.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.ToolStripFilters.Location = new System.Drawing.Point(604, 0);
+            this.ToolStripFilters.Location = new System.Drawing.Point(3, 0);
             this.ToolStripFilters.Name = "ToolStripFilters";
-            this.ToolStripFilters.Padding = new System.Windows.Forms.Padding(0);
-            this.ToolStripFilters.Size = new System.Drawing.Size(319, 25);
+            this.ToolStripFilters.Size = new System.Drawing.Size(393, 25);
             this.ToolStripFilters.TabIndex = 1;
             this.ToolStripFilters.Text = "Filters";
             // 
